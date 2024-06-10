@@ -12,13 +12,8 @@ export default{
     </h2>
 </template>
 =======
-<!-- IMPORTO TUTTO -->
-<script>
-export default{
-    name: 'AppAbout',
-}
 
-</script>
+
 <template>
     <!-- IMPORTO ROUTER SU SINGOLO A-HREF -->
   <div>
@@ -30,8 +25,6 @@ export default{
 
     
   </div>
-<<<<<<< HEAD
->>>>>>> 99a3476e03af617014d08bb2b4d36e7eda38098f
-=======
+
   </template>
->>>>>>> 43fc9c12d3f8cbf2df3e4029ebf5350e724f6344
+
