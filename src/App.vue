@@ -3,11 +3,19 @@
  import AppAbout from './pages/AppAbout.vue';
  import AppContact from './pages/AppContact.vue';
  import AppHome from './pages/AppHome.vue';
+
+ export default{
+  components: {
+    AppAbout,
+    AppContact,
+    AppHome,
+  }
+ }
 </script>
 <template>
   <h1>Vue Vite Template</h1>
-  <h2>Test</h2>
-  <h3>Test 2</h3>
-  <p>Template di partenza per progetti Vite Vue</p>
+  <AppAbout/>
+  <AppContact/>
+  <AppHome/>
 </template>
 <!-- <style></style> -->
