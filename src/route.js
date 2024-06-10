@@ -13,3 +13,4 @@ const router = createRouter({
   history: createMemoryHistory(),
   routes,
 });
+export { router };
