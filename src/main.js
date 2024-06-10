@@ -4,7 +4,7 @@ import { createApp } from "vue";
 import "./assets/scss/main.scss";
 
 //import router
-import router from "./router";
+import router from "/src/router.js";
 
 //import vue root component
 import App from "./App.vue";
