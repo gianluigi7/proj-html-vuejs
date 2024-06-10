@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 <script>
 export default{
     name: 'AppAbout',
