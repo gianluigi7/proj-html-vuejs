@@ -6,6 +6,8 @@
 </script>
 <template>
   <h1>Vue Vite Template</h1>
+  <h2>Test</h2>
+  <h3>Test 2</h3>
   <p>Template di partenza per progetti Vite Vue</p>
 </template>
 <!-- <style></style> -->
