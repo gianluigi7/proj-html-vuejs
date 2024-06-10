@@ -1,5 +1,8 @@
 <!-- IMPORTO TUTTO -->
 <script>
+export default{
+    name: 'AppAbout',
+}
 
 
 
@@ -13,3 +16,4 @@
 
     
   </div>
+  </template>
