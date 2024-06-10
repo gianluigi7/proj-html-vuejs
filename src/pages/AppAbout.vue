@@ -7,14 +7,6 @@ export default{
 </script>
 
 <template>
-    <h2>
-        AppAbout
-    </h2>
-</template>
-=======
-
-
-<template>
     <!-- IMPORTO ROUTER SU SINGOLO A-HREF -->
   <div>
     <!-- AGGIUNGO ROUTER -->
