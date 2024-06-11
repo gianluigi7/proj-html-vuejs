@@ -64,7 +64,7 @@ export default{
               </div>
               
               <div>
-                <button type="button" class="btn  rounded-pill mb-4 button-color px-5 py-3 w-100">
+                <button type="button" class="btn  rounded-pill mb-4 button-color text-white px-5 py-3 w-100">
                   Subscribe
                 </button>
               </div>
@@ -137,6 +137,10 @@ export default{
 
 .button-color{
   background-color: #3D6F42;
+}
+
+.button-color:hover{
+  background-color: #2B4F2F;
 }
 
 .custom-link { 

@@ -67,7 +67,7 @@ export default{
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px">
 
             </textarea>
-            <label for="floatingTextarea2">Comments</label>
+            <label for="floatingTextarea2"></label>
         </div>
         <div class="d-flex justify-content-start">
             <button type="button" class="btn  rounded-pill mb-4 mt-4 button-color px-5 py-3 text-white">
@@ -118,7 +118,11 @@ export default{
     height: 500px;
   }
 
-  .button-color{
+.button-color{
   background-color: #3D6F42;
+}
+
+.button-color:hover{
+  background-color: #2B4F2F;
 }
 </style>
