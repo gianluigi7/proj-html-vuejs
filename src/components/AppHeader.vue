@@ -7,7 +7,7 @@ export default{
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" id="about-content">
        <div class="row">
      
         <!-- LOGO -->
@@ -34,7 +34,7 @@ export default{
       </button>
     </div>
     <!-- QUESTION CALL-US -->
-    <div class="d-flex justify-content-end align-items-center gap-3 col-3">
+    <div class="d-flex justify-content-end align-items-center gap-3 col-4">
           <font-awesome-icon icon="phone-alt"></font-awesome-icon>
           <div class="d-flex align-items-center gap-2">
             <strong>Questions? </strong>
@@ -51,7 +51,7 @@ export default{
     </div>
     </div>
     <!-- NAVBAR CON LINK DELLA PAGINA E ROUTER LINK -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="about-content">
       
       <div class="row">
        
@@ -59,11 +59,11 @@ export default{
           
           <div class="d-flex gap-4">
           <!-- HOME -->
-            <router-link to="/" class="nav-link custom-link text-muted">Home</router-link>
+            <router-link to="/" class="nav-link custom-link text-secondary">Home</router-link>
           <!-- ABOUT -->
-          <router-link to="/about" class="nav-link custom-link text-muted">About</router-link>
+          <router-link to="/about" class="nav-link custom-link text-secondary">About</router-link>
           <!-- CONTACT -->
-          <router-link to="/contact" class="nav-link custom-link text-muted">Contact</router-link>
+          <router-link to="/contact" class="nav-link custom-link text-secondary">Contact</router-link>
  
         </div>
          
@@ -81,17 +81,32 @@ export default{
           <div class="col-4 d-flex justify-content-end align-items-center gap-2">
             <font-awesome-icon icon="globe" class="text-white"></font-awesome-icon>
             <span class="text-center small">
-              <strong class="text-white">International</strong> Shipping Service</span>
+              <strong class="text-white">International <span class="text-secondary">Shipping Service</span></strong> </span>
           </div>
         
-
-          <div class="col-4 d-flex justify-content-center align-items-center">
-            <span class="text-center text-white small">Free shipping on orders over $100</span>
+<!-- ICONA OROLOGIO SEE HOUR STORE  -->
+          <div class="col-4 d-flex justify-content-center align-items-center gap-2">
+            <font-awesome-icon icon="clock" class="text-white"></font-awesome-icon>
+            <span class="text-center small">
+              <strong class="text-secondary">
+                See our
+                <span class="text-white">store hours and</span>
+                  <span>services</span>
+               
+              </strong> 
+            </span>
           </div>
-
-          <div class="col-4 d-flex justify-content-start align-items-center">
-            <span class="text-center text-white small">Sign up for our newsletter</span>
+       
+          <!-- ICONA SPUNTA BIANCA CON  BEST DEALS-->
+          <div class="col-4 d-flex justify-content-start align-items-center gap-2">
+            <font-awesome-icon icon="check" class="text-white"></font-awesome-icon>
+            <span class="text-center small">
+              <span class="text-white">We price match to give tou the  
+                <strong>best deals</strong>
+              </span> 
+            </span>
           </div>
+         
         </div>
 
 
@@ -107,22 +122,45 @@ export default{
  
  
  
+ 
  /* IMPORTO MAIN COLOR FILE COMMON.SCSS */
   @import '../assets/scss/partials/_variables.scss';
+  
+
+  
+  @keyframes fadeIn {
+    0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#about-content {
+  animation: fadeIn 2s;
+  letter-spacing: .15em;
+}
+
+.custom-link {
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+}
  
  
  /* ROUTER LINK STYLE */
- .custom-link {
-  transition: all 0.3s;
- 
- }
- .custom-link:hover{
-  
+
+  .custom-link:hover {
+    color: black !important;
+    transform: scale(1.1);
   }
+
   /* BANNER-HEADER STYLE */
   #banner-header {
     /* uso bacground color in common.scss bg-main */
     background-color: $main-color;
     background-image: url('../img/bg-transparent-3.png'); 
+    letter-spacing: .15em;
   }
  </style>
