@@ -12,8 +12,8 @@ export default{
       <div class="container">
     <div class="row justify-content-center">
       <div class="col-3 mt-5">
-        <div>
-          <img src="../img/LOGO.jpg.jpg" alt="">
+        <div class="logo-footer">
+          <img src="../img/mobile-light-pet-logo@2x.webp" alt="">
         </div>
         <div class="mt-4">
           1234 Avada Avenue Avadaville
@@ -117,6 +117,10 @@ export default{
 
 .f-down{
   color: white;
+}
+
+.logo-footer img{
+  width: 100%;
 }
 
 .button-color{
