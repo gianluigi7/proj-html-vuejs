@@ -28,10 +28,16 @@ export default{
     <!-- fine jumbo -->
      <section id="fix">
 
-         <div class="container-fluid main-color bg-main-color">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
+         <div class="container-fluid bg-main-color">
+             <div>
+                <img src="../img/food-transparent-5.png">
+
+                <p>
+                    Get $25 OFF your first purchase of our homemade pet food! <span>Visit the shop</span>
+                </p>
+             </div>
             
-            </div>
+         </div>
         </section>
     <!-- da fissare -->
 
@@ -97,5 +103,41 @@ export default{
     font-stretch: expanded;
 
    }
-   
+   #fix .container-fluid {
+    background-image: url(../img/bg-transparent-3.png);
+    
+
+     div {
+        max-width: 550px;
+        margin: 0 auto; 
+        display: flex;
+        color: white;
+        font-size: 10px;
+        height: 80px;
+        //align-items: center;
+        
+
+        img {
+            height: 80%;
+            align-self: flex-end;
+        }
+
+        p {
+            
+            margin: auto 10px;
+        }
+
+        span {
+            text-decoration: underline;
+            color: lightgray;
+            margin-left: 13px;
+
+            
+        }
+     }
+     span:hover {
+                color: white;
+                
+     }
+   }
 </style>
