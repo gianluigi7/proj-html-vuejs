@@ -21,6 +21,7 @@
     <!-- AGGIUNGO ROUTER -->
     <AppHeader/>
     <router-view/>
+    <AppFooter/>
   
 
     
