@@ -2,6 +2,20 @@
 export default{
     name: 'AppHome',
 }
+const cards = [
+ {type: 'Transport',
+  numbers: '(7)'
+ },
+ {type: 'Toys',
+  numbers: '(6)'
+ },
+ {type: 'Food',
+  numbers: '(6)'
+ },
+ {type: 'Bed',
+  numbers: '(1)'
+ },
+ ];
 </script>
 <template>
   <section id="jumbotron">
@@ -39,6 +53,28 @@ export default{
             
          </div>
         </section>
+    <section id="browse">
+      <h3 class="main-color">
+        Browse by category
+      </h3>
+       <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam eos officia inventore voluptates consequatur recusandae rerum consectetur 
+       </div>
+       <div class="contenitore">
+         <div class="col">
+            <img src="../img/product-4.jpg">
+         </div>
+         <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores accusantium. Molestiae, consequuntur. Quod reprehenderit iste veritatis inventore et! Similique temporibus doloremque, dolores cum qui totam corporis voluptatum incidunt rerum?
+         </div>
+         <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores accusantium. Molestiae, consequuntur. Quod reprehenderit iste veritatis inventore et! Similique temporibus doloremque, dolores cum qui totam corporis voluptatum incidunt rerum?
+         </div>
+         <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores accusantium. Molestiae, consequuntur. Quod reprehenderit iste veritatis inventore et! Similique temporibus doloremque, dolores cum qui totam corporis voluptatum incidunt rerum?
+         </div>
+       </div>
+    </section>
     <!-- da fissare -->
 
     
@@ -109,7 +145,7 @@ export default{
    }
    #fix .container-fluid {
     background-image: url(../img/bg-transparent-3.png);
-    
+    background-size: 20%;
 
      div {
         max-width: 550px;
@@ -143,5 +179,34 @@ export default{
                 color: white;
                 
      }
+   }
+   #browse {
+     h3 {
+       text-align: center;
+       margin-top: 60px;
+     }
+     div {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 9px;
+        margin-top: 15px;
+     }
+     .contenitore {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        .col {
+            margin: 10px;
+            width: calc(100% / 4 - 20px);
+            img {
+                width: 100%;
+            }
+        }
+     }
+    
+   }
+   h3 {
+    font-size: 20px;
    }
 </style>
