@@ -10,7 +10,9 @@ export default{
         <div class="container-fluid">
         </div>
     </section>
-    <div class="container text-center">
+
+    <section>
+        <div class="container text-center">
   <div class="d-flex justify-content-between">
     <div class="col-4">
         <div class="mt-5">
@@ -79,6 +81,25 @@ export default{
     </div>
   </div>
 </div>
+    </section>
+    <section>
+
+        <!-- BANNER CON SFONDO PERSONALIZZATO VERDE E 3 COL DI TESTO -->
+  <div id="banner-header" class="container-fluid py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center">
+                    User Testimonials
+                </h4>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+    </section>
+    
 
     
 
@@ -125,4 +146,17 @@ export default{
 .button-color:hover{
   background-color: #2B4F2F;
 }
+
+#banner-header {
+    /* uso bacground color in common.scss bg-main */
+    background-color: #1E3120;
+    background-image: url('../img/bg-transparent-3.png'); 
+    letter-spacing: .15em;
+  }
+
+  .col-12 h4{
+    text-transform: uppercase;
+    color: white;
+
+  }
 </style>
