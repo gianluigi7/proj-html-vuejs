@@ -16,6 +16,7 @@ import AppAbout from './pages/AppAbout.vue';
 <template>
   <div>
     <!-- AGGIUNGO ROUTER -->
+    <font-awesome-icon icon="fa-solid fa-user-secret" />
 <ul>
   <li>
     <router-link to="/">Home</router-link>

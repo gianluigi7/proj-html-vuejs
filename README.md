@@ -13,3 +13,12 @@ Template di partenza per progetti Vite Vue
 link logo AVADA:
 
 https://avada.website/pet-supplies/wp-content/uploads/sites/139/2021/05/petsupplies-svg-logo-2.svg
+
+
+parallax
+
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+
+disinstallare quelle non utilizzate a fine progetto
