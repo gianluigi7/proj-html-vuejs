@@ -26,16 +26,13 @@ export default{
         </div>
     </section>
     <!-- fine jumbo -->
-      <div class="container-fluid main-color bg-main-color">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
-      </div>
+     <section id="fix">
+
+         <div class="container-fluid main-color bg-main-color">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus temporibus neque incidunt fugiat magnam nesciunt aliquid veritatis accusamus placeat dolor nostrum modi veniam, officia atque, odit, ipsa unde reiciendis.</p>
+            
+            </div>
+        </section>
     <!-- da fissare -->
 
     
@@ -48,6 +45,7 @@ export default{
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
+    height: 100%;
      //filter: brightness(65%);
     
     
@@ -55,7 +53,7 @@ export default{
         color: white;
         max-width: 700px;
         margin: 0 auto;
-        height: 1200px;
+        
         
 
         div {
@@ -86,6 +84,7 @@ export default{
   #jumbotron button {
     background-color: white;
     color: black;
+    margin-bottom: 150px;
   }
 
    button {
