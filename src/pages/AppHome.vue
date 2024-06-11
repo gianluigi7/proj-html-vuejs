@@ -65,13 +65,13 @@ const cards = [
             <img src="../img/product-4.jpg">
          </div>
          <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores accusantium. Molestiae, consequuntur. Quod reprehenderit iste veritatis inventore et! Similique temporibus doloremque, dolores cum qui totam corporis voluptatum incidunt rerum?
+            <img src="../img/product-2.jpg">
          </div>
          <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores accusantium. Molestiae, consequuntur. Quod reprehenderit iste veritatis inventore et! Similique temporibus doloremque, dolores cum qui totam corporis voluptatum incidunt rerum?
+            <img src="../img/product-3.jpg">
          </div>
          <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores accusantium. Molestiae, consequuntur. Quod reprehenderit iste veritatis inventore et! Similique temporibus doloremque, dolores cum qui totam corporis voluptatum incidunt rerum?
+            <img src="../img/product-9.jpg">
          </div>
        </div>
     </section>
@@ -93,13 +93,13 @@ const cards = [
     
      div {
         color: white;
-        max-width: 700px;
+        max-width: 1240px;
         margin: 0 auto;
         
         
 
         div {
-            width: 70%;
+            width: 73%;
             margin-left: 0;
         }
      }
@@ -112,21 +112,21 @@ const cards = [
   }
   #jumbotron h4 {
     text-transform: uppercase;
-    font-size: 8px;
-    padding-top: 140px;
-    filter: brightness(100%);
+    font-size: 13px;
+    padding-top: 230px;
+    
   }
   h1 {
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    font-size: 52px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     
   }
    
   #jumbotron button {
     background-color: white;
     color: black;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
   }
   #jumbotron button:hover {
     background-color: #3d6f42;
@@ -135,25 +135,25 @@ const cards = [
 
    button {
     
-    font-size: 7px;
+    font-size: 14px;
     border: none;
-    padding: 5px 16px;
+    padding: 9px 28px;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight: 400;
     font-stretch: expanded;
 
    }
    #fix .container-fluid {
     background-image: url(../img/bg-transparent-3.png);
-    background-size: 20%;
+    background-size: 15%;
 
      div {
-        max-width: 550px;
+        max-width: 1000px;
         margin: 0 auto; 
         display: flex;
         color: white;
-        font-size: 10px;
-        height: 80px;
+        font-size: 20px;
+        height: 130px;
         //align-items: center;
         
 
@@ -164,7 +164,7 @@ const cards = [
 
         p {
             
-            margin: auto 10px;
+            margin: auto 20px;
         }
 
         span {
@@ -183,22 +183,23 @@ const cards = [
    #browse {
      h3 {
        text-align: center;
-       margin-top: 60px;
+       margin-top: 100px;
      }
      div {
-        max-width: 400px;
+        max-width: 600px;
         margin: 0 auto;
         text-align: center;
-        font-size: 9px;
-        margin-top: 15px;
+        font-size: 13px;
+        margin-top: 25px;
+        margin-bottom: 20px;
      }
      .contenitore {
         display: flex;
         flex-wrap: wrap;
-        max-width: 700px;
+        max-width: 1240px;
         .col {
-            margin: 10px;
-            width: calc(100% / 4 - 20px);
+            margin: 20px;
+            width: calc(100% / 4 - 40px);
             img {
                 width: 100%;
             }
@@ -207,6 +208,7 @@ const cards = [
     
    }
    h3 {
-    font-size: 20px;
+    font-size: 34px;
+    font-weight: 400;
    }
 </style>
