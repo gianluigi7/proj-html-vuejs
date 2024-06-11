@@ -16,6 +16,7 @@ https://avada.website/pet-supplies/wp-content/uploads/sites/139/2021/05/petsuppl
 
 
 parallax
+background-attachment: fixed;
 
 npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/free-regular-svg-icons

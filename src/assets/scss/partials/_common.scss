@@ -7,3 +7,16 @@ COMMON
 body {
   background-color: $body-bg-color;
 }
+
+.bg-main-color {
+  background-color: $main-color;
+}
+.bg-main-color-dark {
+  background-color: $main-color-dark;
+}
+.bg-grigio {
+  background-color: $navbar-search-input-color;
+}
+.bg-verde {
+  background-color: $button-h4-icon-color;
+}
