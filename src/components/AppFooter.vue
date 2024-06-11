@@ -7,42 +7,44 @@ export default{
 </script>
 
 <template>
-  <div class="container">
+  <footer class="bg-black">
+    <section class="f-up ">
+      <div class="container">
     <div class="row justify-content-center">
-      <div class="col-3">
+      <div class="col-3 mt-5">
         <div>
-          Logo
+          <img src="../img/LOGO.jpg.jpg" alt="">
         </div>
-        <div class="mt-2">
+        <div class="mt-4">
           1234 Avada Avenue Avadaville
           info@your-company.com
           Call us: (1) 234 5678
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mt-5">
         <h3>
           Shop by brand
         </h3>
         <ul>
-          <li>a</li>
-          <li>v</li>
-          <li>v</li>
-          <li>d</li>
+          <li class="mb-4">Bed</li>
+          <li class="mb-4">Food</li>
+          <li class="mb-4">Toys</li>
+          <li class="mb-4">Trasport</li>
         </ul>
       </div>
-      <div class="col-3  ">
+      <div class="col-3 mt-5  ">
         <h3 >
           Shop by brand
         </h3>
         <ul>
-          <li>a</li>
-          <li>v</li>
-          <li>v</li>
-          <li>d</li>
+          <li class="mb-4">My Account</li>
+          <li class="mb-4">Orders</li>
+          <li class="mb-4">Checkout</li>
+          <li >Cart</li>
         </ul>
       </div>
-      <div class="col-3 border rounded">
-        <div class="container">
+      <div class="col-3 mt-5  rounded newsletter">
+        <div class="container img-bg">
           <h3>
             Subscribe to our newsletter
           </h3>
@@ -62,22 +64,52 @@ export default{
   </div>
   <div class="col-12 ">
     <ul class="d-flex flex-row justify-content-center ">
-      <li>a</li>
-      <li>v</li>
-      <li>c</li>
-      <li>b</li>
-      <li>d</li>
+      <li class="me-4 mb-3">Home</li>
+      <li class="me-4">About</li>
+      <li class="me-4">Blog</li>
+      <li class="me-4">Contact</li>
+      <li class="me-4">Shop</li>
     </ul>
 
   </div>
-  <div class="col-12">
-    <font-awesome-icon icon="fa-brands fa-facebook-f" />
+  <div class="col-12 text-center">
+    <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
+    <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
+    <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+    <font-awesome-icon icon="fa-brands fa-youtube" class="mb-4" />
+    
   </div>
 
+
+    </section>
+    <section class=" f-down bg-black ">
+      Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved | Powered by Boolean
+
+    </section>
+  </footer>
   
-  <h2>
-    Footer
-  </h2>
+
+  
+  
     <!-- IMPORTO ROUTER SU SINGOLO A-HREF -->
 
   </template>
+
+<style scoped>
+
+.newsletter{
+  background-color: #273F29;
+}
+.img-bg{
+  background-image: url(../img/);
+}
+.f-up {
+  background-color: #1E3120;
+  color: white;
+}
+
+.f-down{
+  color: white;
+}
+
+</style>
