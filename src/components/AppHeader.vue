@@ -7,17 +7,19 @@ export default{
 </script>
 
 <template>
-  <div class="container">
- <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
-      <img src="../img/LOGO.jpg.jpg" alt="logo">
-      
-    </a>
-     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      </form>
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </nav>
+  <div class="container px4">
+      <nav class="navbar navbar-expand-lg navbar-light d-flex">
+      <a class="navbar-brand" href="#">
+        <img src="../img/LOGO.jpg.jpg" alt="logo">
+      </a>
+      <div class="input-group my-2 my-lg-0 d-flex w-25 position-relative">
+        <input type="text" class="form-control pl-5" placeholder="Search..." aria-label="Search">
+        <font-awesome-icon icon="search" class="position-absolute" style="left: 10px; top: 50%; transform: translateY(-50%);" />
+      </div>
+    </nav>
+  <!-- AGGIUNGO SOTTO LA NAVBAR LA NAVIGAZIONE TRAMITE ROUTERVIEW -->
+
+
   <!-- ROUTERVIEW -->
   <!-- <ul>
   <li>
