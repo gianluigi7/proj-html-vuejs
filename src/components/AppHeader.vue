@@ -2,7 +2,25 @@
 <script>
 export default{
     name: 'AppHeader',
-}
+    // AGGIUNGO METODO PER VISIBILITà LOGO//
+    data() {
+        return {
+            isSticky: false,
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            this. isSticky = window.scrollY > navbarHeight;
+        },
+},
+};
 
 </script>
 
@@ -35,6 +53,7 @@ export default{
     </div>
     <!-- QUESTION CALL-US -->
     <div class="d-flex justify-content-end align-items-center gap-3 col-4">
+     
           <font-awesome-icon icon="phone-alt"></font-awesome-icon>
           <div class="d-flex align-items-center gap-2">
             <strong>Questions? </strong>
@@ -51,27 +70,21 @@ export default{
     </div>
     </div>
     <!-- NAVBAR CON LINK DELLA PAGINA E ROUTER LINK -->
-    <div class="container-fluid" id="about-content">
-      
-      <div class="row">
-       
-        <div class="navbar-nav d-flex justify-content-center align-items-center border-top fw-light p-2">
-          
-          <div class="d-flex gap-4">
-          <!-- HOME -->
-            <router-link to="/" class="nav-link custom-link text-secondary">Home</router-link>
-          <!-- ABOUT -->
-          <router-link to="/about" class="nav-link custom-link text-secondary">About</router-link>
-          <!-- CONTACT -->
-          <router-link to="/contact" class="nav-link custom-link text-secondary">Contact</router-link>
- 
-        </div>
-         
+   <div class="container-fluid sticky-top bg-white" id="about-content">
+  <div class="row">
+    <div class="navbar-nav d-flex justify-content-between align-items-center border-top fw-light p-2">
+      <div class="d-flex justify-content-center gap-4 flex-grow-1">
+      <img class="logo-sticky position-absolute start-0 ps-3" v-show="isSticky" src="../img/LogoNoscritta.png" alt="logo" srcset="">
+        <!-- HOME -->
+        <router-link to="/" class="nav-link custom-link text-secondary">Home</router-link>
+        <!-- ABOUT -->
+        <router-link to="/about" class="nav-link custom-link text-secondary">About</router-link>
+        <!-- CONTACT -->
+        <router-link to="/contact" class="nav-link custom-link text-secondary">Contact</router-link>
       </div>
-
     </div>
-
   </div>
+</div>
   <!-- BANNER CON SFONDO PERSONALIZZATO VERDE E 3 COL DI TESTO -->
   <div id="banner-header" class="container-fluid py-4">
     <div class="row">
@@ -136,6 +149,7 @@ export default{
     opacity: 1;
   }
 }
+
 #about-content {
   animation: fadeIn 2s;
   letter-spacing: .15em;
@@ -163,4 +177,13 @@ export default{
     background-image: url('../img/bg-transparent-3.png'); 
     letter-spacing: .15em;
   }
+
+  /* LOGO STICKY */
+  .logo-sticky {
+    display: none;
+  }
+  .sticky-top .logo-sticky {
+    display: block;
+  }
+
  </style>
