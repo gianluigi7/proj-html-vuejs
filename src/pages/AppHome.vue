@@ -92,6 +92,10 @@ export default{
     color: black;
     margin-bottom: 150px;
   }
+  #jumbotron button:hover {
+    background-color: #3d6f42;
+    color: white;
+  }
 
    button {
     
