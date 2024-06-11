@@ -63,17 +63,52 @@ const cards = [
        <div class="contenitore">
          <div class="col">
             <img src="../img/product-4.jpg">
+            <h5>Transport<span>(7)</span></h5>
          </div>
          <div class="col">
             <img src="../img/product-2.jpg">
+            <h5>Toys<span>(6)</span></h5>
          </div>
          <div class="col">
             <img src="../img/product-3.jpg">
+            <h5>Food<span>(6)</span></h5>
          </div>
          <div class="col">
             <img src="../img/product-9.jpg">
+            <h5>Bread<span>(1)</span></h5>
          </div>
        </div>
+    <section id="arrival">
+     <div class="contenitore">
+        <div class="bg-main-color scale">
+           <div>
+             <h3>Kibble</h3>
+             <p>Dry dog food</p>
+             <img src="../img/food-transparent-18.png">
+             <button>Shop dry food</button>
+           </div>
+        </div>
+        <div class="bg-main-color scale">
+            <div>
+                <h3>Moist</h3>
+                <p>Canned dog food</p>
+                <img src="../img/food-transparent-17.png">
+                <button>Shop moist food</button>
+
+            </div>
+        </div>
+        <div class="bg-main-color scale">
+            <div>
+                <h3>Frozen</h3>
+                <p>Freeze-dried dog food</p>
+                <img src="../img/food-transparent-16.png">
+                <button>Shop frozen food</button>
+
+            </div>
+        </div>
+     </div>
+    </section>
+
     </section>
     <!-- da fissare -->
 
@@ -84,11 +119,11 @@ const cards = [
   #jumbotron .container-fluid {
     max-width: 100%;
     background-image: url(../img/banner-5@2x-scaled.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-color: #c4c3c3;
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
-    position: relative;
     height: 100%;
-     //filter: brightness(65%);
     
     
      div {
@@ -114,6 +149,8 @@ const cards = [
     text-transform: uppercase;
     font-size: 13px;
     padding-top: 230px;
+    letter-spacing: 0.45mm;
+    font-weight: 600;
     
   }
   h1 {
@@ -140,7 +177,7 @@ const cards = [
     padding: 9px 28px;
     border-radius: 20px;
     font-weight: 400;
-    font-stretch: expanded;
+    letter-spacing: 0.15mm;
 
    }
    #fix .container-fluid {
@@ -165,6 +202,7 @@ const cards = [
         p {
             
             margin: auto 20px;
+            
         }
 
         span {
@@ -181,17 +219,19 @@ const cards = [
      }
    }
    #browse {
+       margin-top: 100px;
      h3 {
        text-align: center;
-       margin-top: 100px;
+       
      }
      div {
         max-width: 600px;
         margin: 0 auto;
         text-align: center;
-        font-size: 13px;
+        font-size: 16px;
         margin-top: 25px;
         margin-bottom: 20px;
+        letter-spacing: 0.25mm;
      }
      .contenitore {
         display: flex;
@@ -204,6 +244,16 @@ const cards = [
                 width: 100%;
             }
         }
+       h5 {
+        margin-top: 15px;
+        font-weight: 500;
+        letter-spacing: 0.15mm;
+         span {
+            vertical-align: text-top;
+            margin-left: 3px;
+            font-size: 12px;
+         }
+       }
      }
     
    }
@@ -211,4 +261,44 @@ const cards = [
     font-size: 34px;
     font-weight: 400;
    }
+   #arrival .contenitore {
+    max-width: 1240px;
+    display: flex;
+     div {
+        width: calc(100% / 3 - 12px);
+        margin: 6px;
+        background-image: url(../img/bg-transparent-3.png);
+        background-repeat: no-repeat;
+        div {
+          margin: 60px auto;
+          width: 60%;
+          h3 {
+            color: white;
+
+          }
+          p {
+            color: #3d6f42;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          img {
+            width: 100%;
+            margin-top: 30px;
+          }
+          button {
+            color: white;
+            background-color: #3d6f42;
+            font-weight: 600;
+            margin-top: 25px;
+          }
+        }
+
+     }
+   }
+ .scale:hover {
+   transform: scale(1.03);
+   transition-duration: 0.4s; 
+   
+ }
 </style>
