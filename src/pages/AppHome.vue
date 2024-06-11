@@ -34,6 +34,9 @@ export default{
     background-image: url(../img/banner-5@2x-scaled.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
+    filter: brightness(65%);
+    
     
      div {
         color: white;
@@ -64,5 +67,16 @@ export default{
     margin-top: 20px;
     margin-bottom: 30px;
   }
+   
+   button {
+    background-color: white;
+    color: black;
+    font-size: 7px;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-stretch: expanded;
 
+   }
 </style>
