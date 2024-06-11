@@ -22,3 +22,5 @@ npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/free-brands-svg-icons
 
 disinstallare quelle non utilizzate a fine progetto
+
+<font-awesome-icon icon="fa-solid fa-user-secret" />
