@@ -7,11 +7,14 @@ export default{
 </script>
 
 <template>
-  <h2>
-    ABOUT
-  </h2>
     <!-- IMPORTO ROUTER SU SINGOLO A-HREF -->
+  <div>
+    <!-- AGGIUNGO ROUTER -->
 
+    
+<h2>ABOUT</h2>
+    
+  </div>
 
   </template>
 
