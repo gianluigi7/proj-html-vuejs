@@ -54,11 +54,11 @@ export default{
               Subscribe to our newsletter
             </h3>
             <div class="mb-2">
-              <input type="text" name="" id="" placeholder="Insert your email..." class="rounded-pill px-4 mb-3 py-3 w-100" >
+              <input type="text" name="" id="" placeholder="Insert your email..." class="rounded-pill px-2 mb-3 py-3 w-100" >
             </div>
             
             <div>
-              <button type="button" class="btn  rounded-pill mb-2 button-color px-5 py-3 w-100">Subscribe</button>
+              <button type="button" class="btn  rounded-pill mb-4 button-color px-5 py-3 w-100">Subscribe</button>
             </div>
           </div>
           
@@ -89,8 +89,8 @@ export default{
 
 
     </section>
-    <section class=" f-down bg-black ">
-      <font-awesome-icon icon="fa-regular fa-copyright" /> Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved | Powered by Boolean
+    <section class=" f-down bg-black text-center p-4 ">
+      <font-awesome-icon icon="fa-regular fa-copyright" /> Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved | Powered by Boolean <font-awesome-icon icon="fa-solid fa-star" /> <font-awesome-icon icon="fa-solid fa-star" /> <font-awesome-icon icon="fa-solid fa-star" />
 
     </section>
   </footer>
