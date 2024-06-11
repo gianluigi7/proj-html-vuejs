@@ -1,15 +1,18 @@
 <!-- <script></script> -->
  <script>
- import { RouterView } from 'vue-router';
-import AppAbout from './pages/AppAbout.vue';
+ import AppAbout from './pages/AppAbout.vue';
  import AppContact from './pages/AppContact.vue';
  import AppHome from './pages/AppHome.vue';
+ import AppFooter from './components/AppFooter.vue';
+  import AppHeader from './components/AppHeader.vue';
 
  export default{
   components: {
     AppAbout,
     AppContact,
     AppHome,
+    AppFooter,
+    AppHeader,
   }
  }
 </script>
@@ -32,16 +35,6 @@ import AppAbout from './pages/AppAbout.vue';
 
     
   </div>
-  <router-view>
-    
-  </router-view>
-  <!---
-  <h1>Vue Vite Template</h1>
-  <AppAbout/>
-  <AppContact/>
-  <AppHome/>
-  
-  -->
-  
+
 </template>
-<!-- <style></style> -->
+
