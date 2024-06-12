@@ -7,7 +7,10 @@ export default{
 
 <template>
     <section id="jumbotron">
-        <div class="container-fluid">
+        <div class="container-fluid p-5 text-center " >
+            <h2 class="text-white position-absolute top-50 start-50 translate-middle fs-1">
+                Contact            
+            </h2>
         </div>
     </section>
 
@@ -237,36 +240,17 @@ export default{
 <style scoped lang="scss">
 #jumbotron .container-fluid {
     max-width: 100%;
-    height: 500px;
     background-image: url(../img/banner-14@2x-scaled.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-color: antiquewhite;
     background-color: #c4c3c3;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100%;
+    background-blend-mode: multiply;
+    height: 500px;
      //filter: brightness(65%);
-    
-    
-     div {
-        color: white;
-        max-width: 1240px;
-        margin: 0 auto;
-        
-        
-
-        div {
-            width: 73%;
-            margin-left: 0;
-        }
-     }
      
      
      }
   
-  #jumbotron img {
-    width: 100%;
-    height: 500px;
-  }
 
 .button-color{
   background-color: #3D6F42;
