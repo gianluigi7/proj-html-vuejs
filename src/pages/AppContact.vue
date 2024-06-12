@@ -32,10 +32,10 @@ export default{
             Call us: (1) 234 5678
         </div>
         <div class="mt-4">
-            <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
-    <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
-    <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
-    <font-awesome-icon icon="fa-brands fa-youtube" class="mb-4" />
+            <font-awesome-icon icon="fa-brands fa-facebook-f" style="font-size: 1.25rem;" class="me-4 mb-4 green-color"  />
+            <font-awesome-icon icon="fa-brands fa-x-twitter" style="font-size: 1.25rem;" class="me-4 mb-4 green-color" />
+            <font-awesome-icon icon="fa-brands fa-square-instagram" style="font-size: 1.25rem;" class="me-4 mb-4 green-color"  />
+            <font-awesome-icon icon="fa-brands fa-youtube" style="font-size: 1.25rem;" class="mb-4 green-color" />
         </div>
         
     </div>
@@ -189,10 +189,10 @@ export default{
                         </p>
                         <p class="text-start ">Eu elementum sodales malesuada dictum amet, neque diam sed ac egestas augue.</p>
                     </div>
-                    <div class="text-start pt-4">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+                    <div class="text-start pt-4 ">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color "  />
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
+                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
                     </div>
                 </div>
                 <div class="col-4 staff">
@@ -206,9 +206,9 @@ export default{
                         </p>
                     </div>
                     <div class="text-start pt-4" >
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color"  />
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
+                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
                     </div>
                 </div>
                 <div class="col-4 staff">
@@ -222,9 +222,9 @@ export default{
                         </p>
                     </div>
                     <div class="text-start pt-4">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color"  />
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
+                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
                     </div>
                 </div>
             </div>
@@ -256,6 +256,9 @@ export default{
   background-color: #3D6F42;
 }
 
+.green-color{
+    color: #3D6F42;
+}
 .button-color:hover{
   background-color: #2B4F2F;
 }

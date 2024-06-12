@@ -72,10 +72,10 @@ export default{
           </div>
         </div>
       </div>
-      <hr>
+      <hr class="mt-5">
     </div>
     
-    <div class="col-12 ">
+    <div class="col-12 mt-5 ">
       <ul class="d-flex flex-row justify-content-center  ">
         <router-link to="/" class=" nav-link custom-link me-4 f-mid ">Home</router-link>
         <router-link to="/about" class=" nav-link custom-link me-4 f-mid ">
@@ -93,7 +93,7 @@ export default{
       </ul>
     </div>
     
-    <div class="col-12 text-center">
+    <div class="col-12 text-center mt-5 ">
       <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
       <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
       <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
