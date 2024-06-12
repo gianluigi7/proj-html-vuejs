@@ -36,8 +36,9 @@
     <h5>{{ h5 }}</h5>
     <div class="contenitore">
        <div class="col" v-for="(card, index) in cards">
+          <img src="../img/blog-1.jpg">
+          <!-- <img :src="cards[index].image"> -->
          <div>
-             <img :src=" cards.image ">
 
             <p>{{ cards[index].date }} <span>Tips & Tricks</span></p>
             <h4>{{ cards[index].title }}</h4>
@@ -124,4 +125,10 @@
         filter: brightness(0.75) contrast(1.3);
         
       }
+ img {
+   width:85%;
+   height: 42%;
+   padding: 18px;
+   object-fit: cover;
+ }    
 </style>
