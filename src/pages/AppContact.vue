@@ -171,12 +171,21 @@ export default{
 
     <section id="staff">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
+            <div class="row justify-content-between text-center">
+                <div class="col-12 ">
                     <p>Meet our awesome staff</p>
                     <h2>
                         Passionate about animals
                     </h2>
+                </div>
+                <div class="col-4">
+                    <img src="../img/" alt="">
+                </div>
+                <div class="col-4">
+                    <img src="" alt="">
+                </div>
+                <div class="col-4">
+                    <img src="" alt="">
                 </div>
             </div>
         </div>
