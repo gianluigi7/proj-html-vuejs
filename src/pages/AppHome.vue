@@ -1,6 +1,10 @@
 <script>
+import AppCard from '../components/AppCard.vue';
 export default{
     name: 'AppHome',
+    components: {
+      AppCard,
+    }
 }
 const cards = [
  {type: 'Transport',
@@ -145,7 +149,8 @@ const cards = [
          </div>
       </div>
     </section>
- 
+  <AppCard></AppCard>
+  
 </template>
 
 <style scoped lang="scss">
@@ -277,6 +282,7 @@ const cards = [
         width: calc(100% / 3 - 12px);
         margin: 6px;
         background-image: url(../img/bg-transparent-3.png);
+        background-size: 100%;
         background-repeat: no-repeat;
         text-align: center;
         div {
@@ -308,6 +314,7 @@ const cards = [
      }
      .scale:hover {
        transform: scale(1.03);
+       // break-inside: avoid;
        filter: brightness(1.2);
        transition-duration: 0.4s; 
        }
@@ -381,4 +388,6 @@ const cards = [
           }
         }
       }
+
+     
 </style>
