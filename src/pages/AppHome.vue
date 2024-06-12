@@ -26,10 +26,10 @@ const cards = [
               <div>
                 <div>
                 <h4>find the best animal supplies</h4>
-                <h1>
+                <h2>
                 We know animals are a part of your famlily, let us help take care of them
                 
-                </h1>
+                </h2>
                 <button>
                     Learn more about us
                 </button>
@@ -53,6 +53,7 @@ const cards = [
             
          </div>
         </section>
+      <!-- da fissare -->
     <section id="browse">
       <h3 class="main-color">
         Browse by category
@@ -60,7 +61,7 @@ const cards = [
        <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam eos officia inventore voluptates consequatur recusandae rerum consectetur 
        </div>
-       <div class="contenitore">
+       <div class="contenitore-shop">
          <div class="col">
             <img src="../img/product-4.jpg">
             <h5>Transport<span>(7)</span></h5>
@@ -78,6 +79,7 @@ const cards = [
             <h5>Bread<span>(1)</span></h5>
          </div>
        </div>
+       </section>
     <section id="arrival">
      <div class="contenitore">
         <div class="bg-main-color scale">
@@ -107,12 +109,43 @@ const cards = [
             </div>
         </div>
      </div>
+     <div class="img-container">
+       <div>
+        <h4>Find the best animal supplies</h4>
+        <h2>New arrivals weekly</h2>
+        <button>Learn more about us</button>
+       </div>
+     </div>
     </section>
-
+    <section id="best-sellers">
+      <div class="contenitore">
+        <div>
+          <h5>All-time best sellers</h5>
+          <h3 class="main-color">Item everyone loves</h3>
+        </div>
+        <div><button>view all products</button></div>
+      </div>
+      
+      <div class="contenitore-shop">
+        <div class="col">
+            <img src="../img/product-23.jpg">
+            <h5>Chewable Weight</h5>
+         </div>
+         <div class="col">
+            <img src="../img/product-22.jpg">
+            <h5>Chewable toy</h5>
+         </div>
+         <div class="col">
+            <img src="../img/product-21.jpg">
+            <h5>Transport cage</h5>
+         </div>
+         <div class="col">
+            <img src="../img/product-20.jpg">
+            <h5>Dog leash</h5>
+         </div>
+      </div>
     </section>
-    <!-- da fissare -->
-
-    
+ 
 </template>
 
 <style scoped lang="scss">
@@ -125,35 +158,31 @@ const cards = [
     background-repeat: no-repeat;
     height: 100%;
     
-    
      div {
         color: white;
         max-width: 1240px;
         margin: 0 auto;
         
-        
-
         div {
             width: 73%;
             margin-left: 0;
         }
      }
-     
-     
      }
   
   #jumbotron img {
     width: 100%;
   }
-  #jumbotron h4 {
+  #jumbotron h4, .img-container h4 {
     text-transform: uppercase;
     font-size: 13px;
-    padding-top: 230px;
     letter-spacing: 0.45mm;
     font-weight: 600;
-    
   }
-  h1 {
+  #jumbotron h4 {
+    padding-top: 230px;
+  }
+  h2 {
     font-size: 52px;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -233,30 +262,9 @@ const cards = [
         margin-bottom: 20px;
         letter-spacing: 0.25mm;
      }
-     .contenitore {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1240px;
-        .col {
-            margin: 20px;
-            width: calc(100% / 4 - 40px);
-            img {
-                width: 100%;
-            }
-        }
-       h5 {
-        margin-top: 15px;
-        font-weight: 500;
-        letter-spacing: 0.15mm;
-         span {
-            vertical-align: text-top;
-            margin-left: 3px;
-            font-size: 12px;
-         }
-       }
+     
      }
-    
-   }
+      
    h3 {
     font-size: 34px;
     font-weight: 400;
@@ -264,11 +272,13 @@ const cards = [
    #arrival .contenitore {
     max-width: 1240px;
     display: flex;
+    margin: 100px auto;
      div {
         width: calc(100% / 3 - 12px);
         margin: 6px;
         background-image: url(../img/bg-transparent-3.png);
         background-repeat: no-repeat;
+        text-align: center;
         div {
           margin: 60px auto;
           width: 60%;
@@ -295,10 +305,80 @@ const cards = [
         }
 
      }
-   }
- .scale:hover {
-   transform: scale(1.03);
-   transition-duration: 0.4s; 
-   
- }
+     }
+     .scale:hover {
+       transform: scale(1.03);
+       filter: brightness(1.2);
+       transition-duration: 0.4s; 
+       }
+    .img-container {
+         max-width: 1240px;
+         background-image: url(../img/banner-3@2x-scaled.jpg);
+          background-size: cover;
+          background-color: antiquewhite;
+          margin: 20px auto;
+          background-color: #c4c3c3;
+          background-blend-mode: multiply;
+          div {
+            padding: 150px 0;
+            color: white;
+            text-align: center;
+            button {
+              background-color: white;
+              color: black;
+              }}}
+            .img-container button:hover{
+                  background-color: #3d6f42;
+                  color: white;
+                }
+  #best-sellers .contenitore {
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      margin-bottom: 40px;
+      h5 {
+        color: #3d6f42;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 0.30mm;
+      }
+      button {
+        margin-top: 30px;
+        color: white;
+        background-color: #3d6f42;
+        
+      }
+      button:hover {
+        filter: brightness(0.75) contrast(1.3);
+        
+      }
+    }
+  }
+  .contenitore-shop {
+         display: flex;
+         flex-wrap: wrap;
+         max-width: 1240px;
+         margin: 0 auto;
+         .col {
+             margin: 20px;
+             width: calc(100% / 4 - 40px);
+             img {
+                 width: 100%;
+             }
+         }
+        h5 {
+         margin-top: 15px;
+         font-weight: 500;
+         letter-spacing: 0.15mm;
+         text-align: center;
+          span {
+             vertical-align: text-top;
+             margin-left: 3px;
+             font-size: 12px;
+          }
+        }
+      }
 </style>
