@@ -145,10 +145,42 @@ export default{
 
     </section>
 
-    <section class="newsletter-contact">
+    <section id="newsletter-contact">
         <div class="container">
-            fsdvv
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="py-5">
+                        Join our newsletter
+                    </h2>
+                    <p class="fs-5 mb-5">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
+                    <div class="row">
+                        <div class="col-8"> 
+                            <input type="text" name="" id="" placeholder="Insert your email..." class="rounded-pill px-2 mb-3 py-3 w-100 border border-dark-subtle mb-5" >
+                        </div>
+                        
+                        <div class="col-4">
+                            <button type="button" class="btn  rounded-pill mb-5 button-color text-white px-5 py-3 w-100">
+                  Subscribe
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="staff">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Meet our awesome staff</p>
+                    <h2>
+                        Passionate about animals
+                    </h2>
+                </div>
+            </div>
+        </div>
+
     </section>
     
 
@@ -202,7 +234,8 @@ export default{
     /* uso bacground color in common.scss bg-main */
     background-color: #1E3120;
     background-image: url('../img/bg-transparent-3.png'); 
-    letter-spacing: .15em;
+    background-repeat: repeat-x;
+   
   }
 
   .col-12 h4{
@@ -220,8 +253,13 @@ export default{
     width: 100px;
   }
 
-  .newsletter-contact{
-    background-image: url();
-    
+  #newsletter-contact .container{
+    background-image: url(../img/banner-7@2x-scaled.jpg);
+    background-size: 100%;
+    position: relative;
+    top: -40px;
   }
+
+
+  
 </style>
