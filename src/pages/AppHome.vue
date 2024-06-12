@@ -150,6 +150,44 @@ const cards = [
       </div>
     </section>
   <AppCard></AppCard>
+  <section id="find">
+    <div class="container-max">
+      <div class="left">
+        <div>
+        <h4>Find the best animal supplies</h4>
+        <h2>Popular accessories</h2>
+        <button>View all toys accessories</button>
+     </div>
+    </div>
+      <div class="right">
+        <div>
+        <h4>Find the best food</h4>
+        <h2>New food arrival</h2>
+        <button>View all food products</button>
+     </div>
+      </div>
+      </div>
+        <div class="bot bg-main-color">
+           <div class="row">
+             <div class="col-icon">
+              <font-awesome-icon icon="fa-solid fa-truck" />
+              <p>Free worldwide deliveries</p>
+             </div>
+             <div class="col-icon">
+              <font-awesome-icon icon="fa-regular fa-map" />
+              <p>Free stores near to you</p>
+             </div>
+             <div class="col-icon">
+              <font-awesome-icon icon="fa-solid fa-dollar-sign" />  
+              <p>Best prices guarranteed</p>
+             </div>
+             <div class="col-icon">
+              <font-awesome-icon icon="fa-regular fa-credit-card" />
+              <p>All credit card accepted</p>
+             </div>
+           </div>
+        </div>
+  </section>
   
 </template>
 
@@ -178,7 +216,7 @@ const cards = [
   #jumbotron img {
     width: 100%;
   }
-  #jumbotron h4, .img-container h4 {
+  #jumbotron h4, .img-container h4, #find h4 {
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 0.45mm;
@@ -322,7 +360,6 @@ const cards = [
          max-width: 1240px;
          background-image: url(../img/banner-3@2x-scaled.jpg);
           background-size: cover;
-          background-color: antiquewhite;
           margin: 20px auto;
           background-color: #c4c3c3;
           background-blend-mode: multiply;
@@ -389,5 +426,55 @@ const cards = [
         }
       }
 
-     
+  #find {
+     margin-top: 60px;
+    .container-max {
+      max-width: 100vw;
+      display: flex;
+      .left, .right {
+        width: 50%;
+        background-size: cover; 
+        background-color: #c4c3c3;
+        background-blend-mode: multiply;
+       div {
+        padding: 150px 0;
+        color: white;
+        text-align: center;
+       button {
+         background-color: white;
+         color: black;
+}}}}
+      .right {
+        background-image: url(../img/banner-9@2x.jpg);
+        }
+      .left {
+        background-image: url(../img/banner-8@2x.jpg);
+      }
+      .right:hover, .left:hover{
+        transform: scale(1.03);
+        transition: 0.2s;
+      }
+      .bot {
+        background-image: url(../img/bg-transparent-3.png);
+        background-repeat: repeat-x;
+      }
+      .row {
+        max-width: 1240px;
+        display: flex;
+        margin: 0 auto;
+        padding: 100px 0;
+        
+      }
+      .col-icon {
+        width: calc(100% / 4 - 40px);
+        margin: 20px;
+        color: white;
+        text-align: center;
+        
+      }
+      .fa-truck, .fa-map, .fa-dollar-sign, .fa-credit-card {
+        font-size: 43px;
+        margin-bottom: 20px;
+      }
+  }
 </style>

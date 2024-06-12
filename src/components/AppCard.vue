@@ -29,7 +29,7 @@
             ]
         }
     }
-}
+    }
 </script>
 <template>
     <h2 class="main-color">{{ h2 }}</h2>
