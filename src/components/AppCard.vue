@@ -85,18 +85,20 @@
     color: #3d6f42;
     font-weight: 600;
     margin-top: 30px;
+    cursor: pointer;
  }
  h4 {
     font-weight: 400;
  }
  .col:hover {
-    background-color: rgb(250, 250, 235);
+    background-color: rgb(235, 235, 227);
     transform: scale(1.03);
     transition-duration: 0.3s;
     border: 1px solid gray;
  }
  h4:hover {
     color: #3d6f42;
+    cursor: pointer;
  }
  span:hover {
     color: #3d6f42;
