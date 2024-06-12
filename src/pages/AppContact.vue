@@ -174,18 +174,55 @@ export default{
             <div class="row justify-content-between text-center">
                 <div class="col-12 ">
                     <p>Meet our awesome staff</p>
-                    <h2>
+                    <h2 class="pb-5">
                         Passionate about animals
                     </h2>
                 </div>
-                <div class="col-4">
-                    <img src="../img/" alt="">
+                <div class="col-4 staff">
+                    <img src="../img/staff-1@2x-600x565.jpg" alt="" class="scale">
+                    <div>
+                        <p class="text-start mt-4 fw-medium">
+                          Cheryl Dobson
+                        </p>
+                        <p class="text-start ">Eu elementum sodales malesuada dictum amet, neque diam sed ac egestas augue.</p>
+                    </div>
+                    <div class="text-start pt-4">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
+                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="" alt="">
+                <div class="col-4 staff">
+                    <img src="../img/avatar-8-600x565.jpg" alt="" class="scale">
+                    <div>
+                        <p class="text-start mt-4 fw-medium">
+                            Andrew McNiel
+                        </p>
+                        <p class="text-start ">
+                            Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.
+                        </p>
+                    </div>
+                    <div class="text-start pt-4" >
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
+                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="" alt="">
+                <div class="col-4 staff">
+                    <img src="../img/staff-3@2x-600x565.jpg" alt="" class="scale">
+                    <div>
+                        <p class="text-start mt-4 fw-medium">
+                            Sarah Green
+                        </p>
+                        <p class="text-start">
+                            Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.
+                        </p>
+                    </div>
+                    <div class="text-start pt-4">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4"  />
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4" />
+                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4"  />
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,6 +305,16 @@ export default{
     position: relative;
     top: -40px;
   }
+
+  .staff img{
+    width: 100%;
+  }
+
+  .scale:hover {
+       transform: scale(1.03);
+       filter: brightness(1.05);
+       transition-duration: 0.4s; 
+       }
 
 
   
