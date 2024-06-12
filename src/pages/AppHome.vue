@@ -62,9 +62,9 @@ const cards = [
       <h3 class="main-color">
         Browse by category
       </h3>
-       <div>
+       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam eos officia inventore voluptates consequatur recusandae rerum consectetur 
-       </div>
+       </p>
        <div class="contenitore-shop">
          <div class="col">
             <img src="../img/product-4.jpg">
@@ -258,7 +258,7 @@ const cards = [
        text-align: center;
        
      }
-     div {
+     p {
         max-width: 600px;
         margin: 0 auto;
         text-align: center;
