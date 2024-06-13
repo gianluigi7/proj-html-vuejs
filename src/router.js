@@ -11,5 +11,8 @@ const router = createRouter({
     { path: "/about", component: AppAbout },
     { path: "/contact", component: AppContact },
   ],
+  scrollBehavior() {
+    return { top: 0 };
+  },
 });
 export { router };
