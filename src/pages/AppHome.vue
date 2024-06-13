@@ -66,6 +66,20 @@ export default{
             },
             {
               image: 'src/img/product-21.jpg',
+              h5:'transport cage',
+              price: '25.00',
+              sale: null
+            },
+            {
+              image: 'src/img/product-20.jpg',
+              h5:'Dog Leash',
+              price: '25.00',
+              sale: null
+            },
+           ],
+           products: [
+            {
+              image: 'src/img/product-21.jpg',
               h5:'Transport cage',
               price: '25.00',
               sale: null
@@ -73,6 +87,30 @@ export default{
             {
               image: 'src/img/product-20.jpg',
               h5:'Dog Leash',
+              price: '25.00',
+              sale: null
+            },
+            {
+              image: 'src/img/product-16.jpg',
+              h5:'Animal transport cage',
+              price: '35.00',
+              sale: 29
+            },
+            {
+              image: 'src/img/product-11.jpg',
+              h5:'colorful cat leash',
+              price: '25.00',
+              sale: null
+            },
+            {
+              image: 'src/img/product-5.jpg',
+              h5:'Animal transport cage',
+              price: '25.00',
+              sale: null
+            },
+            {
+              image: 'src/img/product-4.jpg',
+              h5:'Animal transport bag',
               price: '25.00',
               sale: null
             },
@@ -187,7 +225,7 @@ export default{
          
       </div>
     </section>
-  <AppTestimonial :limit="3"></AppTestimonial>
+  <AppTestimonial :limit="3" class="mt-5"></AppTestimonial>
   <AppCard></AppCard>
   
   <section id="find">
@@ -227,6 +265,29 @@ export default{
              </div>
            </div>
         </div>
+  </section>
+
+  <section id="products">
+  <div class="contenitore">
+        <div>
+          <h3 class="main-color">New Products arrival</h3>
+          <h5 class="light-green">latest products</h5>
+        </div>
+      </div>
+      
+      <div class="contenitore-shop">
+        <div class="col-products" v-for="product in products">
+            <img :src=product.image>
+            <h5>{{ product.h5 }}</h5>
+            <p class="price" :class="{'line-tr': product.sale}">&#65284;{{ product.price }} <span class="sconto" v-if="product.sale">{{ product.sale }}% off</span>
+            <span class="new-price" v-if="product.sale">&#65284;{{applySales(product.price, product.sale)}}</span></p>
+            
+            <div class="sale" v-if="product.sale">Sale!</div>  <!--  :class="{'none': item.onSale === false}" -->
+             
+         </div>
+         
+      </div>
+
   </section>
   
 </template>
@@ -453,6 +514,14 @@ export default{
                  width: 100%;
              }
          }
+        .col-products {
+          width: calc(100% / 3 - 40px);
+          margin: 20px;
+          position: relative;
+          img {
+            width: 100%;
+          }
+        } 
         h5 {
          margin-top: 15px;
          font-weight: 500;
@@ -554,7 +623,20 @@ export default{
     left: 15%;
     top: 1px;
   }
-  
-  
+  #products {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    h5 {
+      
+      margin-top: 20px;
+      font-weight: 400;
+      letter-spacing: 0.25mm;
+    } 
+    
+  }
+  .light-green {
+    color: #3d6f42;
+  }
   
 </style>
