@@ -33,6 +33,9 @@ export default{
 </template>
 
 <style scoped lang="scss">
+
+@import '../assets/scss/partials/_variables.scss';
+
 #newsletter-contact .container{
     background-image: url(../img/banner-7@2x-scaled.jpg);
     background-size: 100%;
@@ -41,18 +44,18 @@ export default{
   }
 
   .button-color{
-  background-color: #3D6F42;
+  background-color: $button-h4-icon-color;
 }
 
 .button-color:hover{
-  background-color: #2B4F2F;
+  background-color: $button-bg-hover;
 }
 .row {
     padding: 40px 60px;
 }
 h2 {
     font-size: 37px;
-    color: #2B4F2F;
+    color: $button-bg-hover;
     font-weight: 400;
 }
 p {
