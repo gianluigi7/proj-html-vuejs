@@ -1,17 +1,19 @@
 <script>
-import AppAboutAnimals from '../components/AppAboutAnimals.vue'
 import AppStaff from '../components/AppStaff.vue'
+import AppTestimonial from '../components/AppTestimonial.vue';
 export default{
     name: 'AppContact',
     components: {
-        AppAboutAnimals,
         AppStaff,
+        AppTestimonial,
     }
 }
 
 </script>
 
 <template>
+
+    <!----Inizio Sezione Jumbotron-->
     <section id="jumbotron">
         <div class="container-fluid p-5 text-center " >
             <h2 class="text-white position-absolute top-50 start-50 translate-middle fs-1">
@@ -21,6 +23,9 @@ export default{
     </section>
 
     <section>
+        <!----Fine Sezione Jumbotron-->
+
+        <!----Inizio Sezione Forms-->
         <div class="container text-center">
   <div class="d-flex justify-content-between">
     <div class="col-4">
@@ -91,69 +96,14 @@ export default{
   </div>
 </div>
     </section>
-    <section>
+    <!----Fine Sezione Form-->
 
-        <!-- BANNER CON SFONDO PERSONALIZZATO VERDE E 3 COL DI TESTO -->
-  <div id="banner-header" class="container-fluid py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h4 class="text-center p-5">
-                    User Testimonials
-                </h4> 
-            </div>
-        </div>
-    </div>
-    <!--- 3 col con le immagini -->
-    <div class="container">
-        <div class="row justify-content-center ">
-            <div class="col-4 t-up text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-3-200x200.jpg" alt="" class="rounded-circle">
-                </div>
-                <div>
-                    <p class="mt-4 p-3">
-                        Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.
-                    </p>
+    <!----Inizio Sezione Testimonial-->
+    <AppTestimonial :limit="3" />
+    <!----Fine Sezione Testimonial-->
 
-                    <p class="mt-4 text-secondary">
-                        Lisa Smith, ThemeFusion
-                    </p>  
-                </div>
-            </div>
-            <div class="col-4 t-up text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-1-200x200.jpg" alt="" class="rounded-circle">
-                </div>
-                <div>
-                    <p class="mt-4 p-3">
-                        Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.
-                    </p>
-                    <p class="mt-4 text-secondary">
-                        Melissa Green, ThemeFusion
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 t-up text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-4-200x200.jpg" alt="" class="rounded-circle">   
-                </div>
-                <div>
-                    <p class="mt-4 p-3" >
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.
-                    </p>
-                    <p class="mt-4 text-secondary pb-5 ">
-                        Sam Lewis, ThemeFusion
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
 
-    </section>
-
+    <!----Inizio Sezione NewsLetter-->
     <section id="newsletter-contact">
         <div class="container">
             <div class="row">
@@ -169,87 +119,22 @@ export default{
                         
                         <div class="col-4">
                             <button type="button" class="btn  rounded-pill mb-5 button-color text-white px-5 py-3 w-100">
-                  Subscribe
-                </button>
+                                Subscribe
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!----Fine Sezione NewsLetter-->
 
+
+    <!----Inizio Sezione Staff-->
     <AppStaff />
-
-    <!----
-
-    <section id="staf">
-        <div class="container">
-            <div class="row justify-content-between text-center">
-                <div class="col-12 ">
-                    <p>Meet our awesome staff</p>
-                    <h2 class="pb-5">
-                        Passionate about animals
-                    </h2>
-                </div>
-                <div class="col-4 staff">
-                    <img src="../img/staff-1@2x-600x565.jpg" alt="" class="scale">
-                    <div>
-                        <p class="text-start mt-4 fw-medium">
-                          Cheryl Dobson
-                        </p>
-                        <p class="text-start ">Eu elementum sodales malesuada dictum amet, neque diam sed ac egestas augue.</p>
-                    </div>
-                    <div class="text-start pt-4 ">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color "  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
-                    </div>
-                </div>
-                <div class="col-4 staff">
-                    <img src="../img/avatar-8-600x565.jpg" alt="" class="scale">
-                    <div>
-                        <p class="text-start mt-4 fw-medium">
-                            Andrew McNiel
-                        </p>
-                        <p class="text-start ">
-                            Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.
-                        </p>
-                    </div>
-                    <div class="text-start pt-4" >
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color"  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
-                    </div>
-                </div>
-                <div class="col-4 staff">
-                    <img src="../img/staff-3@2x-600x565.jpg" alt="" class="scale">
-                    <div>
-                        <p class="text-start mt-4 fw-medium">
-                            Sarah Green
-                        </p>
-                        <p class="text-start">
-                            Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.
-                        </p>
-                    </div>
-                    <div class="text-start pt-4">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color"  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    
-    
-    -->
+    <!----Fine Sezione Staff-->
 
     
-    
-
-    
-
 </template>
 
 <style scoped lang="scss">
