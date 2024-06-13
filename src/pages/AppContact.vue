@@ -1,9 +1,11 @@
 <script>
 import AppAboutAnimals from '../components/AppAboutAnimals.vue'
+import AppStaff from '../components/AppStaff.vue'
 export default{
     name: 'AppContact',
     components: {
         AppAboutAnimals,
+        AppStaff,
     }
 }
 
@@ -176,7 +178,7 @@ export default{
         </div>
     </section>
 
-    <AppAboutAnimals />
+    <AppStaff />
 
     <!----
 
