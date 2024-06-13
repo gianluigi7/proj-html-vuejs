@@ -1,26 +1,5 @@
 <script>
 
-export default {
-    name: 'AppTestimonial',
-    props: {
-        limit: {
-            type: Number,
-            default: Infinity
-        }
-    },
-    computed: {
-        limitedTestimonials() {
-            return this.testimonials.slice(0, this.limit)
-        }
-       
-    },
-    data() {
-        return {
-            testimonials: testimonials
-        }
-    }
-
-}
 const testimonials = [
     {
         img: '/src/img/avatar-3-200x200.jpg',
@@ -59,7 +38,28 @@ const testimonials = [
         company: 'ThemeFusion'
     }
 
-]
+];
+export default {
+    name: 'AppTestimonial',
+    props: {
+        limit: {
+            type: Number,
+            default: Infinity
+        }
+    },
+    computed: {
+        limitedTestimonials() {
+            return this.testimonials.slice(0, this.limit)
+        }
+       
+    },
+    data() {
+        return {
+            testimonials: testimonials
+        }
+    }
+
+}
 
 
 </script>
@@ -77,7 +77,7 @@ const testimonials = [
     <!-- ITERO SU TUTTI I DATI -->
     <div class="container">
         <div class="row justify-content-center">
-            <div v-for="testimonial in testimonials" :key="testimonial.name" class="col-4 text-center">
+            <div v-for="testimonial in limitedTestimonials" :key="testimonial.name" class="col-4 text-center">
                 <div class="testimonial">
                     <img :src="testimonial.img" alt="" class="rounded-circle">
                 </div>
