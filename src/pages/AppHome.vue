@@ -2,24 +2,54 @@
 import AppCard from '../components/AppCard.vue';
 export default{
     name: 'AppHome',
+    data() {
+      return {
+        shop: [
+          {
+            type: 'Transport',
+            numbers: '(7)',
+            image: 'src/img/product-4.jpg',
+          },
+          {
+            type: 'Toys',
+           numbers: '(6)',
+           image: 'src/img/product-2.jpg',
+           },
+           {
+            type: 'Food',
+            numbers: '(6)',
+            image: 'src/img/product-3.jpg',
+           },
+          {
+            type: 'Bed',
+           numbers: '(1)',
+           image: 'src/img/product-9.jpg',
+           }],
+           foods: [
+             {
+              h3: 'Kibble',
+              p: 'Dry dog food',
+              image: 'src/img/food-transparent-18.png',
+              button: 'shop dry food'
+             },
+             {
+              h3: 'Moist',
+              p: 'Canned dog food',
+              image: 'src/img/food-transparent-17.png',
+              button: 'shop moist food'
+             },
+             {
+              h3: 'Frozen',
+              p: 'Freeze-dried dog food',
+              image: 'src/img/food-transparent-16.png',
+              button: 'shop frozen food'
+             }
+           ],
+      }},
     components: {
       AppCard,
     }
 }
-const cards = [
- {type: 'Transport',
-  numbers: '(7)'
- },
- {type: 'Toys',
-  numbers: '(6)'
- },
- {type: 'Food',
-  numbers: '(6)'
- },
- {type: 'Bed',
-  numbers: '(1)'
- },
- ];
 </script>
 <template>
   <section id="jumbotron">
@@ -66,51 +96,21 @@ const cards = [
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam eos officia inventore voluptates consequatur recusandae rerum consectetur 
        </p>
        <div class="contenitore-shop">
-         <div class="col">
-            <img src="../img/product-4.jpg">
-            <h5>Transport<span>(7)</span></h5>
-         </div>
-         <div class="col">
-            <img src="../img/product-2.jpg">
-            <h5>Toys<span>(6)</span></h5>
-         </div>
-         <div class="col">
-            <img src="../img/product-3.jpg">
-            <h5>Food<span>(6)</span></h5>
-         </div>
-         <div class="col">
-            <img src="../img/product-9.jpg">
-            <h5>Bread<span>(1)</span></h5>
+         <div class="col" v-for="card in shop">
+            <img :src="card.image">
+            <h5>{{card.type}}<span>{{card.numbers}}</span></h5>
          </div>
        </div>
        </section>
     <section id="arrival">
      <div class="contenitore">
-        <div class="bg-main-color scale">
+        <div class="bg-main-color scale" v-for="food in foods">
            <div>
-             <h3>Kibble</h3>
-             <p>Dry dog food</p>
-             <img src="../img/food-transparent-18.png">
-             <button>Shop dry food</button>
+             <h3>{{food.h3}}</h3>
+             <p>{{food.p}}</p>
+             <img :src="food.image">
+             <button>{{food.button}}</button>
            </div>
-        </div>
-        <div class="bg-main-color scale">
-            <div>
-                <h3>Moist</h3>
-                <p>Canned dog food</p>
-                <img src="../img/food-transparent-17.png">
-                <button>Shop moist food</button>
-
-            </div>
-        </div>
-        <div class="bg-main-color scale">
-            <div>
-                <h3>Frozen</h3>
-                <p>Freeze-dried dog food</p>
-                <img src="../img/food-transparent-16.png">
-                <button>Shop frozen food</button>
-
-            </div>
         </div>
      </div>
      <div class="img-container">
@@ -352,7 +352,6 @@ const cards = [
      }
      .scale:hover {
        transform: scale(1.03);
-       // break-inside: avoid;
        filter: brightness(1.2);
        transition-duration: 0.4s; 
        }
@@ -477,4 +476,5 @@ const cards = [
         margin-bottom: 20px;
       }
   }
+  
 </style>
