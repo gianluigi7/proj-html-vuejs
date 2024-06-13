@@ -91,7 +91,7 @@ export default{
         </router-link>
         <li class="me-4 custom-link f-mid ">
           <a href="#">
-            shop
+            Shop
           </a>
         </li>
       </ul>
