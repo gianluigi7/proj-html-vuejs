@@ -60,7 +60,9 @@ export default{
 
     </section>
 </template>
-<style>
+<style scoped lang="scss">
+@import '../assets/scss/partials/_variables.scss';
+
 .staff{
     overflow: hidden;
 }
@@ -87,6 +89,6 @@ width: 100%;
 }
 
 .green-color{
-    color: #3D6F42;
+    color: $color-green;
 }
        </style>

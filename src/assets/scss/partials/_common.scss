@@ -11,15 +11,31 @@ body {
 .bg-main-color {
   background-color: $main-color;
 }
+
 .main-color {
   color: $main-color;
 }
+
 .bg-main-color-dark {
   background-color: $main-color-dark;
 }
+
 .bg-grigio {
   background-color: $navbar-search-input-color;
 }
+
 .bg-verde {
   background-color: $button-h4-icon-color;
+}
+
+.button-bg-hover {
+  background-color: $button-bg-hover;
+}
+
+.color-green {
+  background-color: $color-green;
+}
+
+.newsletter-bg {
+  background-color: $newsletter;
 }

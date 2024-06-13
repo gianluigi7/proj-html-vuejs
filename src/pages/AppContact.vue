@@ -122,6 +122,8 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@import '../assets/scss/partials/_variables.scss';
+
 @keyframes fadeIn {
     0% {
     opacity: 0;
@@ -154,20 +156,20 @@ export default{
 
 
 .button-color{
-  background-color: #3D6F42;
+  background-color: $button-h4-icon-color;
 }
 
 .green-color{
-    color: #3D6F42;
+    color: $button-h4-icon-color;
 }
 .button-color:hover{
-  background-color: #2B4F2F;
+  background-color: $button-bg-hover;
 }
 
 
 #banner-header {
     /* uso bacground color in common.scss bg-main */
-    background-color: #1E3120;
+    background-color: $main-color;
     background-image: url('../img/bg-transparent-3.png'); 
     background-repeat: repeat-x;
    

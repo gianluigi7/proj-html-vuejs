@@ -293,6 +293,7 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@import '../assets/scss/partials/_variables.scss';
   #jumbotron .container-fluid {
     max-width: 100%;
     background-image: url(../img/banner-5@2x-scaled.jpg);
@@ -339,7 +340,7 @@ export default{
     margin-bottom: 250px;
   }
   #jumbotron button:hover {
-    background-color: #3d6f42;
+    background-color: $button-bg-hover;
     color: white;
   }
 
@@ -432,7 +433,7 @@ export default{
 
           }
           p {
-            color: #3d6f42;
+            color: $color-green;
             margin-top: 10px;
             font-size: 16px;
             font-weight: 600;
@@ -443,7 +444,7 @@ export default{
           }
           button {
             color: white;
-            background-color: #3d6f42;
+            background-color: $button-h4-icon-color;
             font-weight: 600;
             margin-top: 25px;
           }
@@ -472,7 +473,7 @@ export default{
               color: black;
               }}}
             .img-container button:hover{
-                  background-color: #3d6f42;
+                  background-color: $button-h4-icon-color;
                   color: white;
                 }
   #best-sellers .contenitore {
@@ -484,7 +485,7 @@ export default{
     div {
       margin-bottom: 40px;
       h5 {
-        color: #3d6f42;
+        color: $color-green;
         font-weight: 400;
         font-size: 17px;
         letter-spacing: 0.30mm;
@@ -588,7 +589,7 @@ export default{
   }
   .price, .new-price {
     text-align: center;
-    color: #3d6f42;
+    color: $color-green;
     position: relative;
   }
   .sale {
@@ -636,7 +637,7 @@ export default{
     
   }
   .light-green {
-    color: #3d6f42;
+    color: $color-green;
   }
   
 </style>

@@ -118,16 +118,18 @@ export default{
 
   </template>
 
-<style scoped>
+<style scoped lang="scss">
+
+@import '../assets/scss/partials/_variables.scss';
 
 .newsletter{
-  background-color: #273F29;
+  background-color: $newsletter;
 }
 .img-bg{
   background-image: url(/src/img/bg-transparent-3.png);
 }
 .f-up {
-  background-color: #1E3120;
+  background-color: $main-color;
   color: white;
 }
 
@@ -140,11 +142,11 @@ export default{
 }
 
 .button-color{
-  background-color: #3D6F42;
+  background-color: $button-h4-icon-color;
 }
 
 .button-color:hover{
-  background-color: #2B4F2F;
+  background-color: $button-bg-hover;
 }
 
 .custom-link { 

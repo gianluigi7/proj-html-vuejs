@@ -54,11 +54,13 @@
        
 </template>
 <style scoped lang="scss">
+@import '../assets/scss/partials/_variables.scss';
+
  h2, h5 {
     text-align: center;
  }
  h5 {
-    color: #3d6f42;
+    color: $color-green;
     margin-top: 15px;
     font-weight: 400;
  }
@@ -85,7 +87,7 @@
  .reading {
     letter-spacing: 0.15mm;
     font-size: 15px;
-    color: #3d6f42;
+    color: $color-green;
     font-weight: 600;
     margin-top: 30px;
     cursor: pointer;
@@ -104,11 +106,11 @@
 
  }
  h4:hover {
-    color: #3d6f42;
+    color: $color-green;
     cursor: pointer;
  }
  span:hover {
-    color: #3d6f42;
+    color: $color-green;
     cursor: pointer;
  }
  .d-flex {
@@ -124,7 +126,7 @@
     letter-spacing: 0.15mm;
     margin: 30px auto;
     color: white;
-    background-color: #3d6f42;
+    background-color: $button-h4-icon-color;
    
  }
  button:hover {
