@@ -9,22 +9,22 @@
                 {
                     date:'April 21st, 2020',
                     title:'How to "loose leash walk" your dog',
-                    image: '../img/blog-1.jpg',
+                    image: 'src/img/blog-1.jpg',
                 },
                 {
                     date:'April 19th, 2020',
                     title:'Stop cats from scratching furniture',
-                    image: '../img/blog-2.jpg',
+                    image: 'src/img/blog-2.jpg',
                 },
                 {
                     date:'April 18th, 2020',
                     title:'Where to buy the best pet food',
-                    image: '../img/blog-3.jpg',
+                    image: 'src/img/blog-3.jpg',
                 },
                 {
                     date:'April 17th, 2020',
                     title:'Proper care for your pet toys',
-                    image: '../img/blog-4.jpg',
+                    image: 'src/img/blog-4.jpg',
                 }
             ]
         }
@@ -32,17 +32,18 @@
     }
 </script>
 <template>
-    <h2 class="main-color">{{ h2 }}</h2>
+    <h2 class="main-color mt-5">{{ h2 }}</h2>
     <h5>{{ h5 }}</h5>
     <div class="contenitore">
-       <div class="col" v-for="(card, index) in cards">
-          <img src="../img/blog-1.jpg">
-          <!-- <img :src="cards[index].image"> -->
+      <div class="col" v-for="(card, index) in cards" :key="index">
+         <!-- ITERO SU CARDS.IMAGE -->
+        <img :src="card.image">
+
          <div>
 
-            <p>{{ cards[index].date }} <span>Tips & Tricks</span></p>
-            <h4>{{ cards[index].title }}</h4>
-            <p class="reading">continue reading</p>
+            <p>{{ card.date }} <span>Tips & Tricks</span></p>
+            <h4>{{ card.title }}</h4>
+            <p class="reading">Continue reading</p>
          </div>
          
        </div>
@@ -50,6 +51,7 @@
        <div class="d-flex">
            <button>Read All Articles</button>
        </div>
+       
 </template>
 <style scoped lang="scss">
  h2, h5 {
@@ -82,7 +84,7 @@
  }
  .reading {
     letter-spacing: 0.15mm;
-    font-size: 13px;
+    font-size: 15px;
     color: #3d6f42;
     font-weight: 600;
     margin-top: 30px;
@@ -94,8 +96,12 @@
  .col:hover {
     background-color: rgb(235, 235, 227);
     transform: scale(1.03);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     border: 1px solid gray;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      
+
  }
  h4:hover {
     color: #3d6f42;
@@ -126,8 +132,8 @@
         
       }
  img {
-   width:85%;
-   height: 42%;
+   width: 100%;
+   height: 30vh;
    padding: 18px;
    object-fit: cover;
  }    
