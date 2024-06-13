@@ -8,6 +8,7 @@ export default{
             isSticky: false,
             showDropdown: false,
             isHovered: false,
+            searchTerm: ''
             
         }
 
@@ -54,6 +55,12 @@ export default{
           const dropdownMenu = this.$refs.dropdownMenu;
          dropdownMenu.style.top = `${navbar.getBoundingClientRect().bottom}px`;
 
+        },
+        handleSubmit(){
+          console.log('searchTerm', this.searchTerm);
+          //CODICE DA ESEGUIRE//
+
+
         }
 
     }
@@ -96,14 +103,18 @@ export default{
         class="form-control rounded-pill border-0" 
         placeholder="Search..." 
         aria-label="Search" 
+        @keyup.enter="handleSubmit"
+        v-model="searchTerm"
         style="padding-left: 50px; 
         padding-top: 5px; 
         padding-bottom: 5px; 
         background-color: #f3f4f3;">
-        v-model
+        
       <button 
       class="btn position-absolute border-0 bg-transparent" 
-      style="left: 15px; top: 50%; transform: translateY(-50%);">
+      style="left: 15px; top: 50%; transform: translateY(-50%);"
+      @click="handleSubmit"
+      >
         <font-awesome-icon :icon="['fas', 'search']" />
       </button>
     </div>
