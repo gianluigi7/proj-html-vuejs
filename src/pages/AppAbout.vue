@@ -65,6 +65,8 @@ export default{
       <div class="lead text-uppercase font-weight-bold">find the best animals supplies</div>
     
       <p class="display-3">New Arrivals every weeks </p>
+
+      <button class="btn btn-primary rounded-pill">Visit our shop</button>
   </div>
  
      <!-- IMPORTO APP STAFF -->
@@ -104,6 +106,13 @@ h1 {
 }
 .background-section p {
   font-family:serif;
+}
+.btn{
+  background-color:$button-h4-icon-color ;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 </style>

@@ -49,6 +49,7 @@ export default {
     color: black;
     border: none;
     padding: 10px 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 
