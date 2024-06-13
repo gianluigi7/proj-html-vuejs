@@ -1,8 +1,54 @@
 <script>
 
 export default {
-    name: 'AppTestimonial'
+    name: 'AppTestimonial',
+    data() {
+        return {
+            testimonials: testimonials
+        }
+    }
+
 }
+const testimonials = [
+    {
+        img: '/src/img/avatar-3-200x200.jpg',
+        text: 'Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.',
+        name: 'Lisa Smith',
+        company: 'ThemeFusion'
+    },
+    {
+        img: '/src/img/avatar-1-200x200.jpg',
+        text: 'Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.',
+        name: 'Melissa Green',
+        company: 'ThemeFusion'
+    },
+    {
+        img: '/src/img/avatar-4-200x200.jpg',
+        text: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.',
+        name: 'Sam Lewis',
+        company: 'ThemeFusion'
+    },
+    {
+        img: '/src/img/avatar-7-200x200.jpg',
+        text: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit.',
+        name: 'Ben Springer',
+        company: 'ThemeFusion'
+    },
+    {
+        img: '/src/img/avatar-6-200x200.jpg',
+        text: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.',
+        name: 'Sam Lewis',
+        company: 'ThemeFusion'
+    },
+    {
+        img: '/src/img/avatar-5-200x200.jpg',
+        text: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.',
+        name: 'Sam Lewis',
+        company: 'ThemeFusion'
+    }
+
+]
+
 
 </script>
 <template>
@@ -16,90 +62,21 @@ export default {
             </div>
         </div>
     </div>
-    <!--- 3 col con le immagini -->
+    <!-- ITERO SU TUTTI I DATI -->
     <div class="container">
-        <div class="row justify-content-center ">
-            <div class="col-4 text-center">
+        <div class="row justify-content-center">
+            <div v-for="testimonial in testimonials" :key="testimonial.name" class="col-4 text-center">
                 <div class="testimonial">
-                    <img src="/src/img/avatar-3-200x200.jpg" alt="" class="rounded-circle">
+                    <img :src="testimonial.img" alt="" class="rounded-circle">
                 </div>
                 <div>
                     <p class="mt-4 p-3">
-                        Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.
+                        {{testimonial.text}}
                     </p>
 
                     <p class="mt-4 text-secondary">
-                        Lisa Smith, ThemeFusion
+                        {{testimonial.name}}, {{testimonial.company}}
                     </p>  
-                </div>
-            </div>
-            <div class="col-4 text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-1-200x200.jpg" alt="" class="rounded-circle">
-                </div>
-                <div>
-                    <p class="mt-4 p-3">
-                        Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.
-                    </p>
-                    <p class="mt-4 text-secondary">
-                        Melissa Green, ThemeFusion
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-4-200x200.jpg" alt="" class="rounded-circle">   
-                </div>
-                <div>
-                    <p class="mt-4 p-3" >
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.
-                    </p>
-                    <p class="mt-4 text-secondary pb-5 ">
-                        Sam Lewis, ThemeFusion
-                    </p>
-                    
-                </div>
-            </div>
-             <div class="col-4 text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-7-200x200.jpg" alt="" class="rounded-circle">   
-                </div>
-                <div>
-                    <p class="mt-4 p-3" >
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit.
-                    </p>
-                    <p class="mt-4 text-secondary pb-5 ">
-                        Ben Springer , ThemeFusion
-                    </p>
-                    
-                </div>
-            </div>
-             <div class="col-4 text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-6-200x200.jpg" alt="" class="rounded-circle">   
-                </div>
-                <div>
-                    <p class="mt-4 p-3" >
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.
-                    </p>
-                    <p class="mt-4 text-secondary pb-5 ">
-                        Sam Lewis, ThemeFusion
-                    </p>
-                    
-                </div>
-            </div>
-             <div class="col-4 text-center">
-                <div class="testimonial">
-                    <img src="/src/img/avatar-5-200x200.jpg" alt="" class="rounded-circle">   
-                </div>
-                <div>
-                    <p class="mt-4 p-3" >
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.
-                    </p>
-                    <p class="mt-4 text-secondary pb-5 ">
-                        Sam Lewis, ThemeFusion
-                    </p>
-                    
                 </div>
             </div>
         </div>
