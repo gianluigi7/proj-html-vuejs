@@ -5,7 +5,7 @@
  import AppHome from './pages/AppHome.vue';
  import AppFooter from './components/AppFooter.vue';
   import AppHeader from './components/AppHeader.vue';
-  import AppMain from './components/AppMain.vue';
+  
 
  export default{
   components: {
@@ -14,7 +14,7 @@
     AppHome,
     AppFooter,
     AppHeader,
-    AppMain,
+    
   }
  }
 </script>
@@ -25,7 +25,6 @@
 
     <AppHeader></AppHeader>
     <router-view></router-view>
-    <AppMain></AppMain>
     <AppFooter></AppFooter>
 
     
@@ -33,4 +32,11 @@
   
 
 </template>
+
+<style>
+body {
+  font-family:'Roboto', sans-serif;
+}
+
+</style>
 
