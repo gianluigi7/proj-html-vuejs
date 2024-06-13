@@ -81,14 +81,18 @@ export default{
         <router-link to="/about" class=" nav-link custom-link me-4 f-mid ">
           About
         </router-link>
-        <li class="me-4 custom-link f-mid ">
-          Blog
+        <li class="me-4 custom-link f-mid " >
+          <a href="#">
+            Blog
+          </a>  
         </li>
         <router-link to="/contact" class=" nav-link custom-link me-4 f-mid ">
           Contact
         </router-link>
-        <li class="me-4 custom-link f-mid">
-          Shop
+        <li class="me-4 custom-link f-mid ">
+          <a href="#">
+            shop
+          </a>
         </li>
       </ul>
     </div>
@@ -157,6 +161,11 @@ export default{
     color: white;
     transform: scale(1.1);
   
+  }
+
+  .f-mid a{
+    text-decoration: none;
+    color: lightgray;
   }
   
 </style>
