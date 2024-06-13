@@ -1,5 +1,6 @@
 <script>
 import AppCard from '../components/AppCard.vue';
+import AppNewsLetter from '../components/AppNewsLetter.vue';
 import AppTestimonial from '../components/AppTestimonial.vue';
 
 
@@ -119,6 +120,7 @@ export default{
     components: {
       AppCard,
       AppTestimonial,
+      AppNewsLetter,
     },
     methods: {
         applySales(total, percentage) {
@@ -226,6 +228,7 @@ export default{
       </div>
     </section>
   <AppTestimonial :limit="3" class="mt-5"></AppTestimonial>
+  <AppNewsLetter></AppNewsLetter>
   <AppCard></AppCard>
   
   <section id="find">
