@@ -3,12 +3,11 @@ import AppCard from '../components/AppCard.vue';
 import AppNewsLetter from '../components/AppNewsLetter.vue';
 import AppTestimonial from '../components/AppTestimonial.vue';
 
-
 export default{
     name: 'AppHome',
     data() {
       return {
-        //shop
+        fixed: null,
         shop: [
           {
             type: 'Transport',
@@ -122,17 +121,33 @@ export default{
       AppTestimonial,
       AppNewsLetter,
     },
+    mounted() {
+      window.addEventListener('scroll', this.scrollInferiore);
+        
+      },
+      
+    
     methods: {
         applySales(total, percentage) {
         if (percentage) {
 
           let discountValue = (total / 100) * percentage;
-        let finalPrice = total - discountValue;
+          let finalPrice = total - discountValue;
       
       return finalPrice.toFixed(2);
       }
+      },
+      scrollInferiore() {
+         if (window.scrollY > 900) {
+          this.fixed = true;
+            }
+          else {
+            this.fixed = false;
+          }
       }
-    
+      
+      
+      
 }}
 </script>
 <template>
@@ -162,7 +177,7 @@ export default{
     <!-- fine jumbo -->
      <section id="fix">
 
-         <div class="container-fluid bg-main-color">
+         <div class="container-fluid bg-main-color"  :class="{'fixed': fixed === true}">
              <div>
                 <img src="../img/food-transparent-5.png">
 
@@ -647,5 +662,13 @@ export default{
   .light-green {
     color: $color-green;
   }
-  
+  .fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: scaleY(0.8);
+    transition: 0.8s;
+  }
 </style>
