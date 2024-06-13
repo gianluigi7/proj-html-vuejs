@@ -1,6 +1,10 @@
 <script>
+import AppAboutAnimals from '../components/AppAboutAnimals.vue'
 export default{
     name: 'AppContact',
+    components: {
+        AppAboutAnimals,
+    }
 }
 
 </script>
@@ -172,7 +176,11 @@ export default{
         </div>
     </section>
 
-    <section id="staff">
+    <AppAboutAnimals />
+
+    <!----
+
+    <section id="staf">
         <div class="container">
             <div class="row justify-content-between text-center">
                 <div class="col-12 ">
@@ -231,6 +239,11 @@ export default{
         </div>
 
     </section>
+    
+    
+    -->
+
+    
     
 
     
