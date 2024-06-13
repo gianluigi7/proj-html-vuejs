@@ -1,11 +1,13 @@
 <script>
 import AppStaff from '../components/AppStaff.vue'
 import AppTestimonial from '../components/AppTestimonial.vue';
+import AppNewsLetter from '../components/AppNewsLetter.vue';
 export default{
     name: 'AppContact',
     components: {
         AppStaff,
         AppTestimonial,
+        AppNewsLetter,
     }
 }
 
@@ -16,16 +18,19 @@ export default{
     <!----Inizio Sezione Jumbotron-->
     <section id="jumbotron">
         <div class="container-fluid p-5 text-center " >
-            <h2 class="text-white position-absolute top-50 start-50 translate-middle fs-1">
+            <h2 class="text-white position-absolute top-50 start-50 translate-middle fs-1" id="about-content">
                 Contact            
             </h2>
         </div>
     </section>
+    <!----Fine Sezione Jumbotron-->
+    
+    <!----Inizio Sezione Forms-->
 
     <section>
-        <!----Fine Sezione Jumbotron-->
+        
 
-        <!----Inizio Sezione Forms-->
+        
         <div class="container text-center">
   <div class="d-flex justify-content-between">
     <div class="col-4">
@@ -99,34 +104,13 @@ export default{
     <!----Fine Sezione Form-->
 
     <!----Inizio Sezione Testimonial-->
-    <AppTestimonial :limit="3" />
+            <AppTestimonial :limit="3"  />
     <!----Fine Sezione Testimonial-->
 
 
     <!----Inizio Sezione NewsLetter-->
-    <section id="newsletter-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h2 class="py-5">
-                        Join our newsletter
-                    </h2>
-                    <p class="fs-5 mb-5">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
-                    <div class="row">
-                        <div class="col-8"> 
-                            <input type="text" name="" id="" placeholder="Insert your email..." class="rounded-pill px-2 mb-3 py-3 w-100 border border-dark-subtle mb-5" >
-                        </div>
-                        
-                        <div class="col-4">
-                            <button type="button" class="btn  rounded-pill mb-5 button-color text-white px-5 py-3 w-100">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <AppNewsLetter />
+    
     <!----Fine Sezione NewsLetter-->
 
 
@@ -138,6 +122,20 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#about-content {
+  animation: fadeIn 2s;
+  letter-spacing: .15em;
+}
+
 #jumbotron .container-fluid {
     max-width: 100%;
     background-image: url(../img/banner-14@2x-scaled.jpg);
@@ -150,7 +148,10 @@ export default{
      
      
      }
-  
+
+
+     /* spiegheremo cosa fanno queste classi in seguito!*/
+
 
 .button-color{
   background-color: #3D6F42;
@@ -162,6 +163,7 @@ export default{
 .button-color:hover{
   background-color: #2B4F2F;
 }
+
 
 #banner-header {
     /* uso bacground color in common.scss bg-main */
@@ -186,12 +188,7 @@ export default{
     width: 100px;
   }
 
-  #newsletter-contact .container{
-    background-image: url(../img/banner-7@2x-scaled.jpg);
-    background-size: 100%;
-    position: relative;
-    top: -40px;
-  }
+  
 
   .staff img{
     width: 100%;

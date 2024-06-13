@@ -147,7 +147,7 @@ export default{
     </div>
     </div>
     <!-- NAVBAR CON LINK DELLA PAGINA E ROUTER LINK -->
-   <div class="container-fluid sticky-top border-top bg-white" id="about-content" ref="secondNavbar">
+   <div class="container-fluid sticky-top border-top bg-white about-content" ref="secondNavbar">
   <div class="container position-relative">
   <div class="row">
     <div class="navbar-nav d-flex justify-content-between align-items-center fw-light p-2 ">
@@ -275,14 +275,14 @@ export default{
       <div class="container">
         <div class="row">
           <!-- ICONA MAPPA INTERNATIONAL SHIPPING -->
-          <div class="col-4 d-flex justify-content-end align-items-center gap-2">
+          <div class="col-4 d-flex justify-content-end align-items-center gap-2 about-content">
             <font-awesome-icon icon="globe" class="text-white"></font-awesome-icon>
             <span class="text-center small">
               <strong class="text-white">International <span class="text-secondary">Shipping Service</span></strong> </span>
           </div>
         
 <!-- ICONA OROLOGIO SEE HOUR STORE  -->
-          <div class="col-4 d-flex justify-content-center align-items-center gap-2">
+          <div class="col-4 d-flex justify-content-center align-items-center gap-2 about-content">
             <font-awesome-icon icon="clock" class="text-white"></font-awesome-icon>
             <span class="text-center small">
               <strong class="text-secondary">
@@ -295,7 +295,7 @@ export default{
           </div>
        
           <!-- ICONA SPUNTA BIANCA CON  BEST DEALS-->
-          <div class="col-4 d-flex justify-content-start align-items-center gap-2">
+          <div class="col-4 d-flex justify-content-start align-items-center gap-2 about-content">
             <font-awesome-icon icon="check" class="text-white"></font-awesome-icon>
             <span class="text-center small">
               <span class="text-white">We price match to give tou the  
@@ -334,7 +334,7 @@ export default{
   }
 }
 
-#about-content {
+.about-content {
   animation: fadeIn 2s;
   letter-spacing: .15em;
 }

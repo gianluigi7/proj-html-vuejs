@@ -7,11 +7,11 @@ export default {
 
 <template>
     
-    <div class="container-fluid container-about d-flex justify-content-center align-items-center">
+    <div class="container-fluid container-about d-flex justify-content-center align-items-center about-content">
   <div class="row">
-    <div class="col-12 text-white">
+    <div class="col-12 text-white ">
       <h1>About</h1>
-      <p class="lead">LEARN ABOUT OUR BUSINESS PHILOSOPHY</p>
+      <p class="lead ">LEARN ABOUT OUR BUSINESS PHILOSOPHY</p>
     </div>
   </div>
 
@@ -33,6 +33,13 @@ h1 {
 .background-section p {
   font-family:serif;
 }
+
+.about-content {
+  animation: fadeIn 2s;
+  letter-spacing: .15em;
+}
+
+
 
 
 </style>
