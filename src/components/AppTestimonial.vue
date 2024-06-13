@@ -2,6 +2,18 @@
 
 export default {
     name: 'AppTestimonial',
+    props: {
+        limit: {
+            type: Number,
+            default: Infinity
+        }
+    },
+    computed: {
+        limitedTestimonials() {
+            return this.testimonials.slice(0, this.limit)
+        }
+       
+    },
     data() {
         return {
             testimonials: testimonials

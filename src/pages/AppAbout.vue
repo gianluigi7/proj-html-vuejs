@@ -44,8 +44,9 @@ export default{
      <!-- IMPORTO APP STAFF -->
     <AppStaff></AppStaff>
     <!-- FINE APP STAFF -->
-    <!-- IMPORTO APP TESTIMONIAL -->
-    <AppTestimonial></AppTestimonial>
+    <!-- IMPORTO APP TESTIMONIAL CON LIMITATORE-->
+    <AppTestimonial :limit="6"></AppTestimonial>
+    
     <!-- FINE APP TESTIMONIAL -->
     <!-- IMPORTO APP ACCESSORIES -->
     <AppAccessories></AppAccessories>

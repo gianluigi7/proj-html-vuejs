@@ -100,6 +100,7 @@ export default{
         padding-top: 5px; 
         padding-bottom: 5px; 
         background-color: #f3f4f3;">
+        v-model
       <button 
       class="btn position-absolute border-0 bg-transparent" 
       style="left: 15px; top: 50%; transform: translateY(-50%);">
