@@ -1,6 +1,29 @@
 <script>
 export default{
     name: 'AppStaff',
+    data(){
+        return{
+            p: 'Meet our awesome staff',
+            h2: 'Passionate about animals',
+            staffs: [
+                {
+                    image: 'src/img/staff-1@2x-600x565.jpg',
+                    name: 'Cheryl Dobson',
+                    title: 'Eu elementum sodales malesuada dictum amet, neque diam sed ac egestas augue.',
+                },
+                {
+                    image: 'src/img/avatar-8-600x565.jpg',
+                    name: 'Andrew McNiel',
+                    title: 'Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.',
+                },
+                {
+                    image: 'src/img/staff-3@2x-600x565.jpg',
+                    name: 'Sarah Green',
+                    title: 'Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.',
+                },
+            ]
+        }
+    }
 }
 </script>
 <template>
@@ -8,62 +31,26 @@ export default{
         <div class="container mt-5">
             <div class="row justify-content-between text-center">
                 <div class="col-12 ">
-                    <p>Meet our awesome staff</p>
+                    <p>{{ p }}</p>
                     <h2 class="pb-5">
-                        Passionate about animals
+                        {{ h2 }}
                     </h2>
                 </div>
-                <div class="col-4 staff">
+                <div class="col-4 staff" v-for="(staff, index) in staffs" :key="index">
                    <div class="image-container">
-                    <img src="../img/staff-1@2x-600x565.jpg" alt="" class="scale">
+                    <img :src="staff.image" alt="" class="scale">
                    </div>
                     
                     <div>
                         <p class="text-start mt-4 fw-medium">
-                          Cheryl Dobson
+                          {{ staff.name }}
                         </p>
-                        <p class="text-start ">Eu elementum sodales malesuada dictum amet, neque diam sed ac egestas augue.</p>
+                        <p class="text-start ">
+                            {{ staff.title }}
+                        </p>
                     </div>
                     <div class="text-start pt-4 ">
                         <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color "  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
-                    </div>
-                </div>
-                <div class="col-4 staff">
-                    <div class="image-container">
-                        <img src="../img/avatar-8-600x565.jpg" alt="" class="scale">
-                    </div>
-                    
-                    <div>
-                        <p class="text-start mt-4 fw-medium">
-                            Andrew McNiel
-                        </p>
-                        <p class="text-start ">
-                            Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.
-                        </p>
-                    </div>
-                    <div class="text-start pt-4" >
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color"  />
-                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
-                        <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
-                    </div>
-                </div>
-                <div class="col-4 staff">
-                    <div class="image-container">
-                        <img src="../img/staff-3@2x-600x565.jpg" alt="" class="scale">
-                    </div>
-                    
-                    <div>
-                        <p class="text-start mt-4 fw-medium">
-                            Sarah Green
-                        </p>
-                        <p class="text-start">
-                            Aliquam enim amet nulla interdum rhoncus pretium mus massa tellus. Enim non egestas.
-                        </p>
-                    </div>
-                    <div class="text-start pt-4">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="me-4 mb-4 green-color"  />
                         <font-awesome-icon icon="fa-brands fa-x-twitter" class="me-4 mb-4 green-color" />
                         <font-awesome-icon icon="fa-brands fa-square-instagram" class="me-4 mb-4 green-color"  />
                     </div>
@@ -97,5 +84,9 @@ width: 100%;
 }
 .image-container {
   overflow: hidden;
+}
+
+.green-color{
+    color: #3D6F42;
 }
        </style>
