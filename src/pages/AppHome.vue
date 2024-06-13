@@ -148,9 +148,11 @@ export default{
                 We know animals are a part of your famlily, let us help take care of them
                 
                 </h2>
-                <button>
-                    Learn more about us
-                </button>
+                <router-link to="/about">
+                  <button>
+                      Learn more about us
+                  </button>
+                </router-link>
               </div>
               </div>
             </div>  
@@ -201,7 +203,9 @@ export default{
        <div>
         <h4>Find the best animal supplies</h4>
         <h2>New arrivals weekly</h2>
-        <button>Learn more about us</button>
+        <router-link to="/about">
+          <button>Learn more about us</button>
+        </router-link>
        </div>
      </div>
     </section>
@@ -566,6 +570,7 @@ export default{
       .right:hover, .left:hover{
         transform: scale(1.03);
         transition: 0.2s;
+        cursor: pointer;
       }
       .bot {
         background-image: url(../img/bg-transparent-3.png);
