@@ -12,7 +12,6 @@ export default{
         AppContactForm,
     }
 }
-
 </script>
 
 <template>
@@ -29,26 +28,20 @@ export default{
     
     <!----Inizio Sezione Forms-->
     <AppContactForm />
-
-    
     <!----Fine Sezione Form-->
 
     <!----Inizio Sezione Testimonial-->
         <AppTestimonial :limit="3"  />
     <!----Fine Sezione Testimonial-->
 
-
     <!----Inizio Sezione NewsLetter-->
     <AppNewsLetter />
-    
     <!----Fine Sezione NewsLetter-->
-
 
     <!----Inizio Sezione Staff-->
     <AppStaff />
     <!----Fine Sezione Staff-->
 
-    
 </template>
 
 <style scoped lang="scss">
