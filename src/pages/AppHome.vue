@@ -671,4 +671,15 @@ export default{
     transform: scaleY(0.8);
     transition: 0.8s;
   }
+  @keyframes fadeIn {
+    0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#jumbotron {
+  animation: fadeIn 2s;
+}
 </style>
